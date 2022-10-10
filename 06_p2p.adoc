@@ -126,7 +126,7 @@ https://bitcoinops.org/en/topics/eclipse-attacks/[Eclipse attacks^] occur when a
 A _restart-based eclipse attack_ occurs when the adversary is able to add its own addresses to the victim's address manager and then force the victim to restart.
 If the attack succeeds, the victim will make all of its connections to the adversary's addresses when it restarts.
 
-https://github.com/bitcoin/bitcoin/issues/17326[Issue 17326^] proposed persisting the node's outbound connection list to disk, and on restart reconnecting to the same peers.
+https://github.com/bitcoin/bitcoin/issues/17326[Issue 17326^] proposed persisting the node's outbound block-relay-only connection list to disk, and on restart reconnecting to the same peers.
 It's worth reading the full discussion in that issue, since there are a lot of subtle points around which peers should be persisted.
 
 === block-relay-only connections
